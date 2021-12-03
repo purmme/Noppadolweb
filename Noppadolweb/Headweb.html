@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Noppadol Promtas | Website</title>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Noppadol</a>
+            <ul>
+                <li><a href="Personal.html" class="item button">Personal</a></li>
+                <li><a href="Educational.html" class="item button">Educational</a></li>
+                <li><a href="Certificate.html" class="item button">Certificate</a></li>
+                <li><a href="Activity.html" class="item button">Activity</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </header>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Headweb.js"></script>
+        <section>
+            <img src="pictureGG/stars.png" id="stars">
+            <img src="pictureGG/sun.jpg" id="sun">
+            <img src="pictureGG/Purm.png" id="Purm">
+            <img src="pictureGG/pic.png" id="mountain_behind">
+            <h2 id="text">NOPPADOL</h2>
+            <a href="https://www.youtube.com/channel/UCc46ekmXK9C4ZWeOycDD3iQ" id="btn">Introduce myself</a>
+            <img src="pictureGG/mountain_fornt.png" id="mountain_fornt">
+        </section>
+        <div class="sec" id="sec">
+            <h2>คำนำ</h2>
+            <p>
+               <h4> แฟ้มสะสมผลงานเล่มนี้ ข้าพเจ้าได้จัดทำขึ้นเพื่อนำเสนอประวัติส่วนตัว ผลการศึกษา ความรู้ ความสามารถทักษะ รวมถึงกิจกรรมต่างๆที่ข้าพเจ้าเคยเข้าร่วม โดยลำดับจากอดีตจนถึงปัจจุบัน โดยแฟ้มสะสมผลงานเล่มนี้ ประกอบไปด้วยเอกสารเกี่ยวกับประวัติส่วนตัว ประวัติการศึกษา กิจกรรมที่เคยเข้าร่วม และเกียรติบัตรที่ได้รับ
+                <br>ข้าพเจ้าหวังเป็นอย่างยิ่งว่า แฟ้มสะสมผลงานฉบับนี้จะทำให้ทุกท่านที่ได้อ่านเห็นถึงความสามารถของข้าพเจ้าได้อย่างชัดเจนขึ้น และขอขอบพระคุณท่านที่ให้ความช่วยเหลือและให้คำแนะนำ รวบรวมเอกสาร หลักฐานต่างๆ และข้อมูลที่เป็นประโยชน์อย่างยิ่ง เพื่อจัดทำแฟ้มสะสมผลงานในครั้งนี้ และเพื่อศึกษาต่อในระดับอุดมศึกษา
+     
+                                                 <br><h3>นายนพดล พรมเทศ<br>ผู้จัดทำ</h3>
+            </p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Headweb.js"></script>
+        
+        <h2>Content Me</h2>
+        <hr>
+        <form action="">
+            <div class="row">
+                <div class="medium-6 columns">
+                    <label for="name">Name: Mr.Noppadol Promtas</label>
+                </div>
+                <div class="medium-6 columns">
+                    <label for="name">Email: purmme8@gmail.com</label>
+                </div>
+                <div class="footer">
+                    Noppadol Promtas &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>.All Right Reserved
+                </div>
+        <script>
+            let star = document.getElementById('stars');
+            let sun = document.getElementById('sun');
+            let Purm = document.getElementById('Purm');
+            let mountain_behind = document.getElementById('mountain_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountain_fornt = document.getElementById('mountain_fornt');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                star.style.left = value * 0.25 + 'px';
+                sun.style.top = value * 1.05 + 'px';
+                mountain_behind.style.top = value * 0.5 + 'px';
+                Purm.style.top = value * 0 + 'px';
+                mountain_fornt.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+        </script>
+    </body>
+</html>
