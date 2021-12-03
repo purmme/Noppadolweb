@@ -65,6 +65,9 @@ h2{
    padding: 20px 0;
    color: rgba(51, 51, 51, 0.5);
 }
+h1{
+    text-align: center;
+}
 
 /* Mobile Menu */
 
