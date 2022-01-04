@@ -14,7 +14,7 @@ body
     overflow-x: hidden;
     background: linear-gradient(#f87335,#f87335);
 }
-header
+nav
 {
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@ header
     align-items: center;
     z-index: 20000;
 }
-header .logo
+nav .logo
 {
     color: #fff;
     font-weight: 700;
@@ -35,25 +35,25 @@ header .logo
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-header ul
+nav ul
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header ul li
+nav ul li
 {
     list-style-type: none;
     margin-left: 20px;
 }
-header ul li a
+nav ul li a
 {
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
 }
-header ul li a:hover
+nav ul li a:hover
 {
     background: #fff;
     color: #f87335;
@@ -180,7 +180,7 @@ h5
 
 /* Mobile Menu */
 
-.logo{
+.menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -191,8 +191,10 @@ h5
     order: 1;
 }
 
-.item.button {
+.item.button{
     order: 2;
+}
+.item{
     width: 100%;
     text-align: center;
     order: 3;
@@ -205,7 +207,7 @@ h5
 
 /* Tablet Menu */
 @media all and (min-width: 600px){
-    .item{
+    .menu{
         justify-content: center;
     }
     .logo{
@@ -228,8 +230,8 @@ h5
     }
     .button a {
         padding: 7px 15px;
-        background: teal;
-        border: 1px solid #006d6d;
+        background: #f87335;
+        border: 1px solid #ccc;
     }
     .button.secondary a {
         background: transparent;
@@ -238,8 +240,8 @@ h5
         text-decoration: none;
     }
     .button:not(.secondary) a:hover{
-        background: #006d6d;
-        border-color: #005959;
+        background: #f87335;
+        border-color: #fff;
     }
     .button.secondary a:hover {
         color: #ddd;
@@ -256,8 +258,11 @@ h5
    .toggle{
        display: none;
    }
-   .item{
-       order: 1;
+   .menu{
+       order: 0;
+   }
+   .button{
+       order: 2;
    }
    .item.button {
        order: 2;
